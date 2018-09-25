@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+    let numerodousuario;
+let numerochave = Math.round(Math.random() * 49 + 1);
+while(numerodousuario != numerochave) {
+    numerodousuario = prompt("Qual o numero?");
+    if(Number(numerodousuario) === numerochave) {
+        alert("Você acertou!");
+    } else if(numerodousuario > numerochave) {
+        alert("É um numero menor!");
+    } else if(numerodousuario < numerochave) {
+        alert("É um numero maior!");
+    }
+}
+
+</script>
+
+</body>
+</html>
